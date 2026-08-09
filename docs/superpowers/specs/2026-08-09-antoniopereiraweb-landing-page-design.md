@@ -21,7 +21,7 @@ Antonio Pereira is presented as a Local Visibility Consultant specialising in Go
 5. Services and benefits covering profile setup/optimisation, local relevance, reviews/trust, and conversion improvements.
 6. Target-sector cards for cleaning, gardening, trades/contractors, and beauty/wellness.
 7. Three-step process: Free Audit, Optimisation, Growth.
-8. Pricing with £500 one-time optimisation and £400/month growth service.
+8. Pricing with standard launch pricing at £299 one-time setup plus £149/month ongoing support, and a Founding Client Offer for the first 5 clients at £249 one-time setup plus £99/month for the first 3 months before standard monthly pricing applies only if ongoing service continues.
 9. Honest results section using capability and deliverable proof only; no invented statistics or testimonials.
 10. FAQ covering timelines, guarantees, access, service areas, reviews, and ongoing support.
 11. Final conversion section with WhatsApp CTA.
