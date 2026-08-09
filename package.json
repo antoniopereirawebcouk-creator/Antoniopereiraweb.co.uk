@@ -1,0 +1,12 @@
+{
+  "name": "antoniopereiraweb-landing-page",
+  "private": true,
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "validate:site": "node scripts/validate-site.mjs"
+  }
+}
