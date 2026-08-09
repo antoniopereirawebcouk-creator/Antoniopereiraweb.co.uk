@@ -13,7 +13,7 @@
 - English-only content.
 - Primary conversion is a WhatsApp request for a free visibility audit.
 - No visible telephone number.
-- Display £500 one-time optimisation and £400/month growth service.
+- Display standard launch pricing of £299 one-time setup plus £149/month ongoing support, and a Founding Client Offer for the first 5 clients at £249 one-time setup plus £99/month for the first 3 months before the standard monthly rate applies only if ongoing service continues.
 - No fabricated statistics, rankings, results, or testimonials.
 - Static site with no framework, package dependency, CMS, login, payment, booking system, or build step.
 - Responsive, accessible, and fully usable without JavaScript.
