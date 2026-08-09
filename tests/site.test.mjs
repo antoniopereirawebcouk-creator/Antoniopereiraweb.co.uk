@@ -14,7 +14,20 @@ const DESCRIPTION_PHRASES = [
   'Jersey',
   'service businesses',
 ];
-const PRICE_LINES = ['£500 one-time optimisation', '£400/month growth service'];
+const PRICE_LINES = [
+  '£299 one-time setup',
+  '£149/month ongoing support',
+  '£249 one-time setup',
+  '£99/month for the first 3 months',
+];
+const PROHIBITED_PRICE_LINES = [
+  ['£', '500', ' one-time ', 'optimisation'].join(''),
+  ['£', '400', '/month ', 'growth ', 'service'].join(''),
+];
+const FOUNDING_OFFER_COPY = 'Founding Client Offer';
+const FOUNDING_OFFER_LIMIT_COPY = 'first 5 clients';
+const FOUNDING_OFFER_TRANSITION_COPY =
+  'After the first 3 months, ongoing support continues at the standard £149/month only if you want to keep the service running.';
 const REQUIRED_SECTION_IDS = [
   'services',
   'industries',
@@ -176,7 +189,7 @@ test('fabricated-proof guard rejects invented statistics, rankings, results, and
   const compliantHtml = `
     <section id="results">
       <p>What you get is clear optimisation work, not invented performance claims.</p>
-      <p>One-time optimisation starts at £500 and growth support starts at £400/month in 2026.</p>
+      <p>Standard setup is £299 one-time and ongoing support is £149/month in 2026.</p>
     </section>
   `;
 
@@ -206,7 +219,7 @@ test('fabricated-proof guard rejects standalone customer and business count proo
         <li>Step 2: Review the findings.</li>
         <li>Step 3: Start optimisation.</li>
       </ol>
-      <p>Pricing starts at £500 and £400/month in 2026.</p>
+      <p>Pricing starts at £299 setup and £149/month in 2026.</p>
       <p>FAQ: 6 common questions.</p>
       <p>WhatsApp: https://wa.me/447700704591?text=hello</p>
     </section>
@@ -297,6 +310,7 @@ test('static semantic guard rejects framework shells and JavaScript-dependent in
 
 test('index.html defines the landing-page content contract', () => {
   const html = readRequiredFile('index.html');
+  const visibleText = getVisibleText(html);
 
   assert.equal((html.match(/<h1\b/gi) ?? []).length, 1, 'index.html should contain exactly one h1');
 
@@ -305,8 +319,35 @@ test('index.html defines the landing-page content contract', () => {
   assert.equal(normalizeText(h1Match[1]), HERO_H1, 'the h1 should match the approved hero headline');
 
   for (const priceLine of PRICE_LINES) {
-    assert.match(html, new RegExp(escapeRegExp(priceLine)), `index.html should include ${priceLine}`);
+    assert.match(
+      visibleText,
+      new RegExp(escapeRegExp(priceLine)),
+      `index.html should include ${priceLine}`
+    );
   }
+  for (const priceLine of PROHIBITED_PRICE_LINES) {
+    assert.doesNotMatch(
+      visibleText,
+      new RegExp(escapeRegExp(priceLine)),
+      `index.html should not include stale pricing copy: ${priceLine}`
+    );
+  }
+
+  assert.match(
+    visibleText,
+    new RegExp(escapeRegExp(FOUNDING_OFFER_COPY)),
+    'index.html should include the founding-offer label'
+  );
+  assert.match(
+    visibleText,
+    new RegExp(escapeRegExp(FOUNDING_OFFER_LIMIT_COPY)),
+    'index.html should state that the founding offer is limited to the first 5 clients'
+  );
+  assert.match(
+    visibleText,
+    new RegExp(escapeRegExp(FOUNDING_OFFER_TRANSITION_COPY)),
+    'index.html should explain exactly what happens after the founding offer ends'
+  );
 
   assert.match(
     html,
