@@ -1,358 +1,643 @@
 <!doctype html>
 <html lang="en-GB">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Google Business Profile Optimisation | Jersey &amp; UK</title>
-    <meta
-      name="description"
-      content="Antonio Pereira Web helps UK and Jersey service businesses improve Google Business Profile visibility and turn local searches into enquiries."
-    >
-    <meta name="theme-color" content="#0d1726">
-    <link rel="canonical" href="https://antoniopereiraweb.co.uk/">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <meta property="og:title" content="Get Found on Google Maps. Turn Local Searches Into Customers.">
-    <meta property="og:description" content="Antonio Pereira Web helps UK and Jersey service businesses improve Google Business Profile visibility and turn local searches into enquiries.">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Antonio Pereira Web">
-    <meta property="og:url" content="https://antoniopereiraweb.co.uk/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Get Found on Google Maps. Turn Local Searches Into Customers.">
-    <meta name="twitter:description" content="Antonio Pereira Web helps UK and Jersey service businesses improve Google Business Profile visibility and turn local searches into enquiries.">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Antonio Pereira Web",
-        "url": "https://antoniopereiraweb.co.uk/",
-        "email": "info@antoniopereiraweb.co.uk",
-        "areaServed": ["Jersey", "United Kingdom"],
-        "serviceType": "Google Business Profile optimisation"
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Business Profile Optimisation | Antonio Pereira Web</title>
+  <meta name="description" content="Personal Google Business Profile optimisation for small businesses in Jersey and across the UK. Request your free visibility audit from Antonio Pereira Web.">
+  <meta name="theme-color" content="#10251f">
+  <link rel="canonical" href="https://antoniopereiraweb.co.uk/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:title" content="Help local customers find and choose your business.">
+  <meta property="og:description" content="Google Business Profile optimisation with personal support from Antonio. Serving Jersey and the UK.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Antonio Pereira Web">
+  <meta property="og:url" content="https://antoniopereiraweb.co.uk/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://antoniopereiraweb.co.uk/#business",
+    "name": "Antonio Pereira Web",
+    "url": "https://antoniopereiraweb.co.uk/",
+    "email": "info@antoniopereiraweb.co.uk",
+    "areaServed": [
+      {"@type": "Place", "name": "Jersey"},
+      {"@type": "Country", "name": "United Kingdom"}
+    ],
+    "description": "Google Business Profile optimisation and ongoing local visibility support for service businesses."
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #152a24;
+      --muted: #58665f;
+      --green: #235d46;
+      --green-dark: #163e2f;
+      --gold: #c6a568;
+      --paper: #fafaf6;
+      --soft: #f0f3ed;
+      --line: #dce3da;
+      --white: #fff;
+      --radius: 22px;
+      --shadow: 0 20px 60px rgba(21,42,36,.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body {
+      margin: 0; color: var(--ink); background: var(--paper);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    button { font: inherit; }
+    h1,h2,h3,p { margin-top: 0; }
+    h1,h2,h3 { line-height: 1.12; letter-spacing: -.045em; }
+    h1 { font-size: clamp(2.65rem,5.2vw,4.65rem); margin-bottom: 24px; }
+    h2 { font-size: clamp(2rem,3.4vw,3rem); margin-bottom: 20px; }
+    h3 { font-size: 1.25rem; letter-spacing: -.025em; margin-bottom: 14px; }
+    p { margin-bottom: 18px; }
+    .wrap { width: min(1120px,calc(100% - 48px)); margin-inline: auto; }
+    .section { padding: 88px 0; }
+    .section-soft { background: var(--soft); }
+    .eyebrow {
+      display: block; color: var(--green); text-transform: uppercase;
+      font-size: .75rem; font-weight: 750; letter-spacing: .13em; margin-bottom: 20px;
+    }
+    .lead { color: var(--muted); font-size: 1.1rem; max-width: 650px; }
+    .section-head { max-width: 680px; margin-bottom: 36px; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 50px; padding: 13px 22px; border-radius: 10px;
+      text-decoration: none; font-size: .9rem; font-weight: 700;
+      border: 1px solid transparent; transition: background .2s,transform .2s;
+      cursor: pointer;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--green); color: var(--white); }
+    .button-primary:hover { background: var(--green-dark); }
+    .button-secondary { background: transparent; border-color: var(--line); color: var(--ink); }
+    .button-secondary:hover { background: var(--soft); }
+    .button-light { background: var(--white); color: var(--green-dark); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    :focus-visible { outline: 3px solid #ae7b21; outline-offset: 5px; }
+    .skip {
+      position: absolute; top: -100px; left: 20px; z-index: 100;
+      background: var(--white); padding: 12px 20px;
+    }
+    .skip:focus { top: 12px; }
+    header {
+      position: sticky; top: 0; z-index: 30;
+      background: rgba(250,250,246,.96); border-bottom: 1px solid var(--line);
+    }
+    .header-inner { min-height: 82px; display: flex; align-items: center; gap: 28px; }
+    .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; margin-right: auto; }
+    .brand-mark {
+      width: 40px; height: 40px; border-radius: 12px; background: var(--ink);
+      color: #ead3a4; display: grid; place-items: center;
+      font-size: .85rem; font-weight: 750; letter-spacing: -.02em;
+    }
+    .brand-name { font-size: .95rem; font-weight: 750; letter-spacing: -.03em; }
+    nav { display: flex; gap: 22px; align-items: center; }
+    nav a { font-size: .84rem; font-weight: 600; text-decoration: none; color: var(--muted); }
+    nav a:hover { color: var(--green); }
+    .header-cta { min-height: 44px; padding: 10px 17px; font-size: .8rem; }
+    .menu-toggle { display: none; }
+    .hero { padding: 78px 0 64px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 60px; }
+    .hero .lead { font-size: 1.08rem; max-width: 550px; margin-bottom: 28px; }
+    .hero-note { color: var(--muted); font-size: .8rem; margin: 16px 0 0; }
+    .audit-preview {
+      border: 1px solid var(--line); border-radius: 26px; padding: 28px;
+      background: var(--white); box-shadow: var(--shadow); position: relative;
+    }
+    .preview-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 30px; }
+    .preview-tag {
+      font-size: .67rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase;
+      background: var(--soft); color: var(--green); padding: 7px 11px; border-radius: 50px;
+    }
+    .preview-label { font-size: .75rem; color: var(--muted); }
+    .audit-preview h2 { font-size: 1.7rem; margin-bottom: 10px; }
+    .audit-preview > p { font-size: .9rem; color: var(--muted); }
+    .audit-row {
+      display: flex; align-items: center; gap: 14px; padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .audit-row:last-of-type { border-bottom: 0; }
+    .number {
+      flex-shrink: 0; width: 34px; height: 34px; border-radius: 10px;
+      background: var(--soft); display: grid; place-items: center;
+      font-size: .75rem; font-weight: 700; color: var(--green);
+    }
+    .audit-row strong { display: block; font-size: .9rem; }
+    .audit-row small { display: block; color: var(--muted); font-size: .77rem; }
+    .preview-bottom {
+      background: var(--ink); color: var(--white); padding: 18px;
+      border-radius: 13px; margin-top: 20px; font-size: .85rem;
+    }
+    .preview-bottom span { display: block; color: #c9d7cf; font-size: .77rem; margin-top: 4px; }
+    .trust-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .trust-inner {
+      display: flex; justify-content: space-between; gap: 20px;
+      flex-wrap: wrap; padding: 22px 0; font-size: .85rem; font-weight: 600;
+    }
+    .trust-inner span::before { content: "✓"; color: var(--green); margin-right: 9px; }
+    .grid { display: grid; gap: 20px; }
+    .grid-three { grid-template-columns: repeat(3,1fr); }
+    .grid-two { grid-template-columns: repeat(2,1fr); }
+    .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+    .card p { color: var(--muted); font-size: .94rem; margin-bottom: 0; }
+    .card-icon {
+      display: inline-grid; place-items: center; width: 42px; height: 42px;
+      background: var(--soft); color: var(--green); border-radius: 12px;
+      margin-bottom: 23px; font-weight: 750; font-size: .8rem;
+    }
+    .industries { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+    .pill { border: 1px solid var(--line); border-radius: 50px; padding: 8px 15px; font-size: .83rem; background: var(--white); }
+    .process-card { border-top: 2px solid var(--gold); padding: 26px 0; }
+    .process-card .eyebrow { margin-bottom: 18px; }
+    .process-card p { color: var(--muted); font-size: .95rem; }
+    .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: start; }
+    .about-card { background: var(--ink); color: var(--white); padding: 36px; border-radius: var(--radius); }
+    .about-monogram {
+      width: 72px; height: 72px; border: 1px solid #637b6e; border-radius: 20px;
+      display: grid; place-items: center; color: #ead3a4; font-size: 1.7rem;
+      margin-bottom: 28px; font-weight: 600;
+    }
+    .about-card h3 { font-size: 1.55rem; }
+    .about-card p { color: #c9d7cf; font-size: .95rem; }
+    .about-card small { color: #ead3a4; }
+    .about-copy p { color: var(--muted); }
+    .checklist { list-style: none; padding: 0; margin: 25px 0; }
+    .checklist li { padding: 9px 0 9px 25px; position: relative; font-size: .92rem; }
+    .checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 750; }
+    .pricing-card { padding: 34px; display: flex; flex-direction: column; }
+    .pricing-card .button { margin-top: auto; align-self: flex-start; }
+    .price { font-size: 2.65rem; font-weight: 750; line-height: 1.1; letter-spacing: -.05em; margin: 20px 0 8px; }
+    .price small { font-size: .88rem; font-weight: 500; letter-spacing: 0; }
+    .price-detail { font-size: .86rem; color: var(--muted); margin-bottom: 22px; }
+    .pricing-card.featured { background: var(--ink); color: var(--white); border-color: var(--ink); }
+    .featured p,.featured .price-detail { color: #c9d7cf; }
+    .featured .price { color: var(--white); }
+    .featured .checklist li::before { color: #ead3a4; }
+    .offer-note {
+      margin-top: 22px; padding: 20px 24px; border: 1px solid var(--line);
+      border-radius: 14px; color: var(--muted); font-size: .88rem;
+    }
+    .offer-note strong { color: var(--ink); }
+    .scope-note { font-size: .8rem; color: var(--muted); margin-top: 16px; }
+    .example-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: center; }
+    .example-card { padding: 30px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
+    .example-item { padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .example-item:last-child { border-bottom: 0; }
+    .example-item strong { font-size: .9rem; }
+    .example-item p { font-size: .87rem; color: var(--muted); margin: 6px 0 0; }
+    .example-caption { color: var(--muted); font-size: .8rem; margin-top: 16px; }
+    .faq-wrap { max-width: 820px; margin-inline: auto; }
+    details { border-bottom: 1px solid var(--line); }
+    summary {
+      cursor: pointer; padding: 23px 35px 23px 0;
+      font-size: 1rem; font-weight: 650; position: relative; list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; position: absolute; right: 4px; top: 20px; font-size: 1.4rem; color: var(--green); }
+    details[open] summary::after { content: "−"; }
+    details p { color: var(--muted); font-size: .94rem; padding-right: 25px; margin-bottom: 24px; }
+    .contact-box {
+      background: var(--ink); color: var(--white); border-radius: 28px;
+      padding: 56px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center;
+    }
+    .contact-box .eyebrow { color: #ead3a4; }
+    .contact-box h2 { font-size: clamp(2rem,3vw,2.7rem); }
+    .contact-box p { color: #c9d7cf; }
+    .contact-info { padding: 28px; border: 1px solid #52685c; border-radius: 18px; }
+    .contact-info h3 { margin-bottom: 18px; }
+    .contact-info ul { padding-left: 20px; color: #d4ded7; font-size: .9rem; }
+    .contact-info .button { width: 100%; margin: 15px 0; }
+    .email-link { display: block; text-align: center; font-size: .85rem; overflow-wrap: anywhere; text-underline-offset: 4px; }
+    footer { padding: 32px 0; font-size: .8rem; color: var(--muted); }
+    .footer-inner { display: flex; gap: 25px; justify-content: space-between; align-items: center; }
+    footer p { margin-bottom: 5px; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { text-underline-offset: 4px; }
+    .mobile-cta { display: none; }
+    @media (max-width: 1000px) {
+      .header-inner { gap: 18px; }
+      nav { gap: 14px; }
+      .header-cta { display: none; }
+      .hero-grid { gap: 30px; }
+      .about-grid { gap: 35px; }
+    }
+    @media (max-width: 760px) {
+      html { scroll-padding-top: 85px; }
+      .wrap { width: min(1120px,calc(100% - 36px)); }
+      .section { padding: 60px 0; }
+      .header-inner { min-height: 72px; flex-wrap: wrap; gap: 0; }
+      .brand-name { font-size: .88rem; }
+      .menu-toggle { display: inline-flex; min-height: 40px; padding: 8px 13px; }
+      .menu-toggle[hidden] { display: none; }
+      nav { width: 100%; flex-wrap: wrap; padding: 12px 0 20px; gap: 16px 22px; }
+      nav[data-collapsible="true"] { display: none; }
+      nav[data-collapsible="true"].is-open { display: flex; }
+      nav a { padding: 5px 0; }
+      .hero { padding: 44px 0; }
+      .hero-grid,.about-grid,.example-grid,.contact-box { grid-template-columns: 1fr; }
+      .hero-grid { gap: 35px; }
+      h1 { max-width: 600px; }
+      .hero .lead { font-size: 1rem; }
+      .audit-preview { padding: 24px; }
+      .trust-inner { gap: 12px 20px; font-size: .78rem; }
+      .grid-three,.grid-two { grid-template-columns: 1fr; }
+      .process-card { padding: 20px 0 0; }
+      .contact-box { padding: 30px 24px; gap: 20px; }
+      .contact-info { padding: 22px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 15px; }
+      footer { padding-bottom: 105px; }
+      .mobile-cta {
+        display: block; position: fixed; bottom: 0; left: 0; right: 0;
+        z-index: 40; background: rgba(250,250,246,.98); border-top: 1px solid var(--line);
+        padding: 10px 18px calc(10px + env(safe-area-inset-bottom));
       }
-    </script>
-  </head>
-  <body class="site-body">
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header" data-site-header>
-      <div class="site-header__inner">
-        <a class="site-brand" href="/">Antonio Pereira Web</a>
-        <button
-          class="button button--secondary menu-toggle"
-          type="button"
-          data-menu-toggle
-          aria-expanded="false"
-          aria-controls="site-nav"
-          hidden
-        >Menu</button>
-        <nav id="site-nav" class="site-nav" aria-label="Primary" data-nav>
-          <a class="site-nav__link" href="#services">Services</a>
-          <a class="site-nav__link" href="#industries">Industries</a>
-          <a class="site-nav__link" href="#process">Process</a>
-          <a class="site-nav__link" href="#pricing">Pricing</a>
-          <a class="site-nav__link" href="#results">Results</a>
-          <a class="site-nav__link" href="#faq">FAQ</a>
-          <a class="site-nav__link" href="#contact">Contact</a>
-        </nav>
-        <a
-          class="button button--primary"
-          href="https://wa.me/447700704591?text=I%27d%20like%20a%20free%20Google%20Business%20Profile%20visibility%20audit."
-          target="_blank"
-          rel="noopener noreferrer"
-        >Request Your Free Audit</a>
+      .mobile-cta .button { width: 100%; min-height: 46px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+      .button:hover { transform: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Antonio Pereira Web home">
+        <span class="brand-mark" aria-hidden="true">AP</span>
+        <span class="brand-name">Antonio Pereira Web</span>
+      </a>
+      <button class="button button-secondary menu-toggle" id="menu-toggle"
+        type="button" aria-expanded="false" aria-controls="navigation" hidden>
+        Menu
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#about">About Antonio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="button button-primary header-cta" href="#contact">Get your free audit</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Local visibility · Jersey &amp; UK</span>
+          <h1>Help local customers find and choose your business.</h1>
+          <p class="lead">
+            Google Business Profile optimisation for small businesses.
+            Clear advice, practical improvements and personal support from Antonio.
+          </p>
+          <div class="actions">
+            <a class="button button-primary" href="#contact">Get my free visibility audit</a>
+            <a class="button button-secondary" href="#services">Explore the services</a>
+          </div>
+          <p class="hero-note">Free initial review. No obligation. No account access needed to start.</p>
+        </div>
+
+        <aside class="audit-preview" aria-labelledby="preview-heading">
+          <div class="preview-top">
+            <span class="preview-tag">Visibility audit</span>
+            <span class="preview-label">What we review</span>
+          </div>
+          <h2 id="preview-heading">A clearer picture.<br>A practical next step.</h2>
+          <p>Understand where your Google Business Profile could work harder for your business.</p>
+          <div class="audit-row">
+            <span class="number" aria-hidden="true">01</span>
+            <div><strong>Business information</strong><small>Details, opening hours and contact links</small></div>
+          </div>
+          <div class="audit-row">
+            <span class="number" aria-hidden="true">02</span>
+            <div><strong>Services &amp; categories</strong><small>How clearly your profile reflects what you offer</small></div>
+          </div>
+          <div class="audit-row">
+            <span class="number" aria-hidden="true">03</span>
+            <div><strong>Photos &amp; reviews</strong><small>How your business builds customer confidence</small></div>
+          </div>
+          <div class="audit-row">
+            <span class="number" aria-hidden="true">04</span>
+            <div><strong>Paths to an enquiry</strong><small>How easily customers can take the next step</small></div>
+          </div>
+          <div class="preview-bottom">
+            Clear recommendations, in priority order.
+            <span>Know what to improve and why it matters.</span>
+          </div>
+        </aside>
       </div>
-    </header>
+    </section>
 
-    <main id="main-content" class="site-main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__content" data-reveal>
-          <p class="eyebrow">Google Maps visibility for local service businesses</p>
-          <h1 id="hero-title">Get Found on Google Maps. Turn Local Searches Into Customers.</h1>
-          <p class="hero__summary">
-            If your Google Business Profile is incomplete, inconsistent, or underused, local
-            customers can miss you even when you do great work. Antonio Pereira Web helps service
-            businesses in Jersey and across the UK improve local visibility, trust, and enquiry
-            quality.
+    <div class="trust-strip">
+      <div class="wrap trust-inner">
+        <span>Personal support from Antonio</span>
+        <span>Jersey &amp; UK businesses</span>
+        <span>One-time or ongoing help</span>
+      </div>
+    </div>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">What I can help with</span>
+          <h2 id="services-title">Make your Google profile easier to find, trust and contact.</h2>
+          <p class="lead">
+            You focus on running your business. I help you present it clearly to people searching for your services locally.
           </p>
-          <div class="hero__actions">
-            <a
-              class="button button--primary"
-              href="https://wa.me/447700704591?text=I%27d%20like%20a%20free%20Google%20Business%20Profile%20visibility%20audit."
-              target="_blank"
-              rel="noopener noreferrer"
-            >Request Your Free Audit</a>
-            <a class="button button--secondary" href="mailto:info@antoniopereiraweb.co.uk">Email Antonio</a>
-          </div>
         </div>
-        <div class="hero__visual" role="group" aria-labelledby="audit-reviews-title" data-reveal>
-          <div class="visibility-map" aria-hidden="true">
-            <span class="visibility-map__road visibility-map__road--one"></span>
-            <span class="visibility-map__road visibility-map__road--two"></span>
-            <span class="visibility-map__road visibility-map__road--three"></span>
-            <span class="visibility-map__area visibility-map__area--one"></span>
-            <span class="visibility-map__area visibility-map__area--two"></span>
-            <span class="visibility-map__pin visibility-map__pin--one"></span>
-            <span class="visibility-map__pin visibility-map__pin--two"></span>
-            <span class="visibility-map__pin visibility-map__pin--three"></span>
-            <span class="visibility-map__signal"></span>
-            <span class="visibility-map__profile">
-              <span class="visibility-map__initials">AP</span>
-              <span class="visibility-map__profile-copy">
-                <strong>Local visibility</strong>
-                <span>Jersey + United Kingdom</span>
-              </span>
-            </span>
-          </div>
-          <div class="hero-visual-card">
-            <p id="audit-reviews-title" class="hero-visual-card__label">What your audit reviews</p>
-            <ul class="hero-visual-card__list">
-              <li>Profile completeness</li>
-              <li>Category and service relevance</li>
-              <li>Photo, post, and review workflow</li>
-              <li>Conversion paths for calls and messages</li>
+        <div class="grid grid-three">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">01</span>
+            <h3>Profile optimisation</h3>
+            <p>Review and improve your business information, categories, service descriptions, opening hours and relevant service areas.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">02</span>
+            <h3>Customer confidence</h3>
+            <p>Plan useful photos and posts, develop a review-request approach and improve how your business responds to customer feedback.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">03</span>
+            <h3>Ongoing visibility support</h3>
+            <p>Keep your profile current with regular checks, agreed content updates and practical recommendations as your business changes.</p>
+          </article>
+        </div>
+        <div class="industries" aria-label="Business types served">
+          <span class="pill">Cleaning companies</span>
+          <span class="pill">Gardeners &amp; landscapers</span>
+          <span class="pill">Trades &amp; contractors</span>
+          <span class="pill">Beauty &amp; wellness</span>
+          <span class="pill">Other local service businesses</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2 id="process-title">Three straightforward steps.</h2>
+          <p class="lead">Start with a review. Agree the work. Choose the support you need.</p>
+        </div>
+        <div class="grid grid-three">
+          <article class="process-card">
+            <span class="eyebrow">Step 01</span>
+            <h3>Share your business</h3>
+            <p>Send your business name, location and Google profile link if you have one. I review the public information and identify useful improvements.</p>
+          </article>
+          <article class="process-card">
+            <span class="eyebrow">Step 02</span>
+            <h3>Agree your priorities</h3>
+            <p>We confirm the scope, price and expected timing before work begins. You receive a clear explanation of the changes proposed.</p>
+          </article>
+          <article class="process-card">
+            <span class="eyebrow">Step 03</span>
+            <h3>Improve and maintain</h3>
+            <p>I complete the agreed optimisation work. You can finish after setup or choose monthly support to keep your profile useful and up to date.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div class="about-card">
+          <div class="about-monogram" aria-hidden="true">AP</div>
+          <h3>Antonio Pereira</h3>
+          <p>Your direct contact for Google Business Profile optimisation and local visibility support.</p>
+          <small>Based in Jersey · Working with businesses across the UK</small>
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">Meet Antonio</span>
+          <h2 id="about-title">A personal service for small businesses.</h2>
+          <p>I help small businesses and sole traders improve how they appear online, with practical support and clear communication.</p>
+          <p>You work directly with me, from your first audit through to the agreed improvements. My focus is making your business information clearer, your services easier to understand and your contact options easier to use.</p>
+          <ul class="checklist">
+            <li>Advice explained in plain English</li>
+            <li>Work agreed before changes begin</li>
+            <li>Support that fits your business and budget</li>
+          </ul>
+          <a class="button button-secondary" href="mailto:info@antoniopereiraweb.co.uk">Email Antonio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Clear pricing</span>
+          <h2 id="pricing-title">Start with the help you need.</h2>
+          <p class="lead">Choose a one-time optimisation, with optional monthly support afterwards.</p>
+        </div>
+        <div class="grid grid-two">
+          <article class="card pricing-card">
+            <span class="eyebrow">One-time service</span>
+            <h3>Profile Optimisation</h3>
+            <div class="price">£299 <small>one-time</small></div>
+            <p class="price-detail">A focused review and improvement of your Google Business Profile.</p>
+            <ul class="checklist">
+              <li>Business information and opening-hours review</li>
+              <li>Category and service-area review</li>
+              <li>Business description and service-copy improvements</li>
+              <li>Website and contact-link checks</li>
+              <li>Photo and review-request recommendations</li>
+              <li>Summary of completed work and next steps</li>
             </ul>
+            <a class="button button-primary" href="#contact">Discuss my profile</a>
+          </article>
+          <article class="card pricing-card featured">
+            <span class="eyebrow" style="color:#ead3a4">Optional ongoing service</span>
+            <h3>Monthly Support</h3>
+            <div class="price">£149 <small>/ month</small></div>
+            <p class="price-detail">Ongoing help after setup to keep your profile current and consistent.</p>
+            <ul class="checklist">
+              <li>Regular profile information checks</li>
+              <li>Agreed post and content updates</li>
+              <li>Photo-update recommendations</li>
+              <li>Review-request and response guidance</li>
+              <li>Profile performance review where data is available</li>
+              <li>Monthly summary and recommended priorities</li>
+            </ul>
+            <a class="button button-light" href="#contact">Discuss monthly support</a>
+          </article>
+        </div>
+        <div class="offer-note">
+          <strong>Founding Client Offer — first 5 clients:</strong>
+          £249 one-time setup, with optional support at £99/month for the first 3 months.
+          After that, support is £149/month if you choose to continue.
+          Availability is confirmed before booking.
+        </div>
+        <p class="scope-note">The exact deliverables, content volume, timing and service terms are confirmed before you commit.</p>
+      </div>
+    </section>
+
+    <section class="section" id="audit-example" aria-labelledby="example-title">
+      <div class="wrap example-grid">
+        <div>
+          <span class="eyebrow">An example of the approach</span>
+          <h2 id="example-title">Useful advice.<br>Clear priorities.</h2>
+          <p class="lead">An audit should help you understand what needs attention and what to do next.</p>
+          <p class="example-caption">This is an illustrative example of audit recommendations, rather than a client case study or measured result.</p>
+        </div>
+        <div class="example-card">
+          <h3>Example: a local service business</h3>
+          <div class="example-item">
+            <strong>Priority 1 — Check the essentials</strong>
+            <p>Confirm that opening hours, website links and business information are accurate.</p>
+          </div>
+          <div class="example-item">
+            <strong>Priority 2 — Clarify the services</strong>
+            <p>Review categories and add clear descriptions of the services actually offered.</p>
+          </div>
+          <div class="example-item">
+            <strong>Priority 3 — Strengthen customer confidence</strong>
+            <p>Plan current business photos and a consistent approach to requesting genuine reviews.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="trust-strip" aria-label="Service areas and business types">
-        <p>
-          Built for cleaning companies, gardeners, trades, contractors, and beauty professionals
-          serving Jersey and the wider UK.
-        </p>
-      </section>
-
-      <section class="problem" aria-labelledby="problem-title">
-        <h2 id="problem-title">Why local businesses get overlooked</h2>
-        <p>
-          A profile can exist and still underperform. Missing services, weak categories, outdated
-          imagery, thin business descriptions, and unclear next steps make it harder for the right
-          searcher to choose you.
-        </p>
-        <p>
-          The goal is not vanity metrics. It is a clearer local presence that makes your business
-          easier to find, easier to trust, and easier to contact.
-        </p>
-      </section>
-
-      <section id="services" class="services" aria-labelledby="services-title">
-        <h2 id="services-title">What the optimisation service covers</h2>
-        <div class="card-grid">
-          <article class="service-card" data-reveal>
-            <h3>Profile setup and repair</h3>
-            <p>
-              Clean up the essentials so your Google Business Profile reflects the services,
-              locations, and contact paths you actually want to promote.
-            </p>
-          </article>
-          <article class="service-card" data-reveal>
-            <h3>Local relevance improvements</h3>
-            <p>
-              Tighten categories, service descriptions, and supporting content so your profile is
-              more aligned with the searches that matter to your business.
-            </p>
-          </article>
-          <article class="service-card" data-reveal>
-            <h3>Trust-building content</h3>
-            <p>
-              Improve the way photos, posts, and review requests support the buying decision
-              without relying on exaggerated claims.
-            </p>
-          </article>
-          <article class="service-card" data-reveal>
-            <h3>Conversion-focused actions</h3>
-            <p>
-              Reduce friction between discovery and enquiry so more interested searchers can move
-              from profile visit to message or email.
-            </p>
-          </article>
+    <section class="section section-soft" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-wrap">
+        <div class="section-head">
+          <span class="eyebrow">Your questions</span>
+          <h2 id="faq-title">Before we get started.</h2>
         </div>
-      </section>
+        <details>
+          <summary>What does the free audit include?</summary>
+          <p>An initial review of your publicly visible Google Business Profile, covering business information, services, photos, reviews and contact options. You receive practical recommendations and can decide whether you want help applying them.</p>
+        </details>
+        <details>
+          <summary>Do I need to provide access to my Google account?</summary>
+          <p>No account access is needed for the initial public-profile audit. If we agree work that requires profile access, we arrange an appropriate manager invitation. You keep ownership and do not need to share your password.</p>
+        </details>
+        <details>
+          <summary>Can you help if I do not have a profile yet?</summary>
+          <p>Yes. We can discuss profile setup and whether your business is eligible. Any verification requirements are handled through Google's process.</p>
+        </details>
+        <details>
+          <summary>Do you guarantee a top position on Google Maps?</summary>
+          <p>No. Rankings and enquiries cannot be guaranteed. The service focuses on accurate information, relevant service descriptions, useful content and clearer paths for customers to contact you.</p>
+        </details>
+        <details>
+          <summary>How long does the work take?</summary>
+          <p>Timing depends on your profile, access requirements and the agreed scope. I confirm the expected schedule before work begins. Google's verification or review processes may affect when some changes appear.</p>
+        </details>
+        <details>
+          <summary>Do I have to take monthly support?</summary>
+          <p>No. You can choose the one-time optimisation only. Monthly support is optional, and its scope and terms are agreed before it starts.</p>
+        </details>
+        <details>
+          <summary>Do you work with businesses outside Jersey?</summary>
+          <p>Yes. I work remotely with local service businesses in Jersey and across the UK. We can communicate by email or WhatsApp.</p>
+        </details>
+      </div>
+    </section>
 
-      <section id="industries" class="industries" aria-labelledby="industries-title">
-        <h2 id="industries-title">Who this is for</h2>
-        <div class="card-grid">
-          <article class="industry-card">
-            <h3>Cleaning companies</h3>
-            <p>Stand out for recurring home, office, and specialist cleaning searches.</p>
-          </article>
-          <article class="industry-card">
-            <h3>Gardeners and landscapers</h3>
-            <p>Show the right services and service areas when seasonal demand rises.</p>
-          </article>
-          <article class="industry-card">
-            <h3>Trades and contractors</h3>
-            <p>Present a clearer local offering for urgent and planned property work.</p>
-          </article>
-          <article class="industry-card">
-            <h3>Beauty and wellness businesses</h3>
-            <p>Support local discovery for appointment-led services where trust matters early.</p>
-          </article>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-box">
+          <div>
+            <span class="eyebrow">Your next step</span>
+            <h2 id="contact-title">Find out where your profile could improve.</h2>
+            <p>Send a few details about your business. I will review your public profile and explain the next steps.</p>
+            <p style="font-size:.85rem;margin-bottom:0">Free initial audit · No obligation · Personal response from Antonio</p>
+          </div>
+          <div class="contact-info">
+            <h3>To get started, send:</h3>
+            <ul>
+              <li>Your business name</li>
+              <li>Your town or service area</li>
+              <li>Your Google profile or website link, if available</li>
+            </ul>
+            <a class="button button-light"
+              href="https://wa.me/447700704591?text=Hello%20Antonio%2C%20I%27d%20like%20a%20free%20visibility%20audit.%0A%0ABusiness%20name%3A%20%0ATown%20or%20service%20area%3A%20%0AGoogle%20profile%20or%20website%3A%20"
+              target="_blank" rel="noopener noreferrer">
+              Request my audit on WhatsApp
+            </a>
+            <a class="email-link" href="mailto:info@antoniopereiraweb.co.uk?subject=Free%20Visibility%20Audit">
+              Or email info@antoniopereiraweb.co.uk
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section id="process" class="process" aria-labelledby="process-title">
-        <h2 id="process-title">How the process works</h2>
-        <ol class="process-list">
-          <li class="process-step" data-reveal>
-            <h3>Free Audit</h3>
-            <p>
-              Start with a WhatsApp message and get a practical review of where your profile is
-              helping, where it is weak, and what should happen next.
-            </p>
-          </li>
-          <li class="process-step" data-reveal>
-            <h3>Optimisation</h3>
-            <p>
-              Apply the priority fixes that improve profile clarity, local relevance, and contact
-              readiness.
-            </p>
-          </li>
-          <li class="process-step" data-reveal>
-            <h3>Growth</h3>
-            <p>
-              Continue with monthly support if you want help maintaining momentum, content rhythm,
-              and profile quality over time.
-            </p>
-          </li>
-        </ol>
-      </section>
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <p><strong>Antonio Pereira Web</strong></p>
+        <p>Antonio Pereira, trading as Antonio Pereira Web · Jersey, Channel Islands</p>
+        <p>Independent service. Not affiliated with or endorsed by Google.</p>
+        <p>© <span id="year">2026</span> Antonio Pereira Web</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:info@antoniopereiraweb.co.uk">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-      <section id="pricing" class="pricing" aria-labelledby="pricing-title">
-        <h2 id="pricing-title">Simple pricing</h2>
-        <p>
-          Start with a free visibility audit, then choose the setup and support level that fits
-          your business. Setup is a one-time fee.
-        </p>
-        <div class="card-grid">
-          <article class="pricing-card pricing-card--featured" data-reveal>
-            <h3>Standard Launch Pricing</h3>
-            <p class="pricing-card__price">£299 one-time setup</p>
-            <p>
-              Get the core Google Business Profile setup and improvement work, then continue with
-              <strong>£149/month ongoing support</strong> only if you want ongoing help after the
-              launch work is complete.
-            </p>
-          </article>
-          <article class="pricing-card" data-reveal>
-            <h3>Founding Client Offer</h3>
-            <p class="pricing-card__price">£249 one-time setup</p>
-            <p>
-              Limited to the <strong>first 5 clients</strong>. Ongoing support is
-              <strong>£99/month for the first 3 months</strong>.
-            </p>
-            <p>
-              After the first 3 months, ongoing support continues at the standard £149/month only
-              if you want to keep the service running.
-            </p>
-          </article>
-        </div>
-      </section>
+  <div class="mobile-cta">
+    <a class="button button-primary" href="#contact">Get my free visibility audit</a>
+  </div>
 
-      <section id="results" class="results" aria-labelledby="results-title">
-        <h2 id="results-title">What you can expect from the work</h2>
-        <div class="results-stack" data-reveal>
-          <p>
-            You get a clearer profile, sharper service positioning, better enquiry paths, and a
-            practical list of improvements tied to how local customers actually evaluate providers.
-          </p>
-          <p>
-            Deliverables can include profile edits, category guidance, service copy improvements,
-            review-request suggestions, content ideas, and next-step recommendations that your
-            business can keep using.
-          </p>
-          <p>
-            This service does not promise rankings or enquiry volume. It focuses on improving the
-            quality, consistency, and usefulness of your local presence.
-          </p>
-        </div>
-      </section>
+  <script>
+    (() => {
+      const toggle = document.getElementById('menu-toggle');
+      const navigation = document.getElementById('navigation');
+      const mobile = window.matchMedia('(max-width: 760px)');
 
-      <section id="faq" class="faq" aria-labelledby="faq-title">
-        <h2 id="faq-title">Frequently asked questions</h2>
-        <details class="faq-item">
-          <summary>How quickly can we start?</summary>
-          <p>
-            The audit can start as soon as you send your initial message and share the basics of
-            your business.
-          </p>
-        </details>
-        <details class="faq-item">
-          <summary>Do you guarantee rankings?</summary>
-          <p>
-            No. The work is designed to improve profile quality and local discovery readiness, not
-            to promise a position in search results.
-          </p>
-        </details>
-        <details class="faq-item">
-          <summary>Will you need access to my Google Business Profile?</summary>
-          <p>
-            Access depends on the work we agree. The audit can start without handing over account
-            permissions straight away.
-          </p>
-        </details>
-        <details class="faq-item">
-          <summary>Can you help businesses outside Jersey?</summary>
-          <p>
-            Yes. The service is built for businesses in Jersey and across the UK that rely on local
-            search visibility.
-          </p>
-        </details>
-        <details class="faq-item">
-          <summary>Can you help us improve how reviews support enquiries?</summary>
-          <p>
-            Yes. The service can include guidance on how to request and present reviews in a way
-            that supports trust and decision-making.
-          </p>
-        </details>
-        <details class="faq-item">
-          <summary>What happens after the one-time setup?</summary>
-          <p>
-            You can stop after setup or continue with support if you want ongoing help. Standard
-            launch pricing is a £299 one-time setup, then £149/month only if ongoing service
-            continues. The Founding Client Offer is £249 one-time setup with £99/month for the
-            first 3 months, then the standard £149/month only if you choose to continue.
-          </p>
-        </details>
-      </section>
+      toggle.hidden = false;
+      navigation.dataset.collapsible = 'true';
 
-      <section id="contact" class="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Request your audit</h2>
-        <p>
-          If you want a clearer Google Maps presence and a more useful Google Business Profile,
-          start with a short message and we can review your current setup.
-        </p>
-        <div class="contact__actions">
-          <a
-            class="button button--primary"
-            href="https://wa.me/447700704591?text=I%27d%20like%20a%20free%20Google%20Business%20Profile%20visibility%20audit."
-            target="_blank"
-            rel="noopener noreferrer"
-          >Request Your Free Audit</a>
-          <a class="button button--secondary" href="mailto:info@antoniopereiraweb.co.uk">info@antoniopereiraweb.co.uk</a>
-        </div>
-      </section>
-    </main>
+      function closeMenu() {
+        navigation.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = 'Menu';
+      }
 
-    <footer class="site-footer">
-      <p>Antonio Pereira Web helps local service businesses improve Google Business Profile visibility.</p>
-      <p>Antonio Pereira, trading as Antonio Pereira Web · Jersey, Channel Islands</p>
-      <p><a href="mailto:info@antoniopereiraweb.co.uk">info@antoniopereiraweb.co.uk</a></p>
-      <ul class="footer-links">
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-      </ul>
-    </footer>
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(open));
+        navigation.classList.toggle('is-open', open);
+        toggle.textContent = open ? 'Close' : 'Menu';
+      });
 
-    <a
-      class="mobile-audit-cta"
-      href="https://wa.me/447700704591?text=I%27d%20like%20a%20free%20Google%20Business%20Profile%20visibility%20audit."
-      target="_blank"
-      rel="noopener noreferrer"
-    >Request Your Free Audit</a>
-    <script src="assets/js/main.js" defer></script>
-  </body>
-</html>
+      navigation.addEventListener('click', event => {
+        if (event.target.closest('a') && mobile.matches) closeMenu();
+      });
+
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu();
+          toggle.focus();
+        }
+      });
+
+      if (mobile.addEventListener) {
+        mobile.addEventListener('change', closeMenu);
+      }
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+  </html>
